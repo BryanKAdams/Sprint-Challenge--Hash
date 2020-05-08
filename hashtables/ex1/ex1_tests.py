@@ -13,12 +13,14 @@ class TestEx1(unittest.TestCase):
     def test_ex1_2(self):
         weights_2 = [4, 4]
         answer_2 = get_indices_of_item_weights(weights_2, 2, 8)
+        print(answer_2)
         self.assertTrue(answer_2[0] == 1)
         self.assertTrue(answer_2[1] == 0)
 
     def test_ex1_3(self):
         weights_3 = [4, 6, 10, 15, 16]
         answer_3 = get_indices_of_item_weights(weights_3, 5, 21)
+        print(answer_3)
         self.assertTrue(answer_3[0] == 3)
         self.assertTrue(answer_3[1] == 1)
 
